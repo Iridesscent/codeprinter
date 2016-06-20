@@ -17,7 +17,7 @@
         <title>codeprinter</title>
 
         <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Droid+Sans+Mono|Anonymous+Pro' rel='stylesheet' type='text/css'>
+        <link href='local/css.css' rel='stylesheet' type='text/css'>
 
         <!-- Bootstrap core CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -92,30 +92,34 @@
                             </ul>
                         </li>
                         <li><a href="javascript:undefined;" title="Print your code!" onClick="overallPrint();"><span class="glyphicon glyphicon-print" style="color: #777777;"></span></a></li>
+                                 
                     </ul>
+                    <!--
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="https://github.com/jaredpetersen/codeprinter" target="_blank">
+                            <a href="index.html">
                                 <img src="assets/images/github.png" width="16px" style="padding-bottom: 7px;"></img>
                             </a>
                         </li>
                         <li>
-                            <a href="heart.html">
+                            <a href="index.html">
                                 <span class="glyphicon glyphicon-heart" style="color: #D9534F;"></span>
                             </a>
                         </li>
                     </ul>
+                    -->
                 </div>
             </div>
         </nav>
-
         <!-- Container -->
         <div class="container">
+            <!--
             <div class="alert alert-info alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <strong>Tip!</strong> You may want to disable printing the header and footer in your web browser
             </div>
-
+            -->
+            
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">Print your code!</h3>
@@ -127,13 +131,22 @@
 
             <!-- Used to store the printed code -->
             <div id="printSpace" class="printSpace">Hello, and welcome to CodePrinter!<br />This is where your code will be printed out!</div>
+            <div class="panel-heading">
+                    <h3 class="panel-title" align="right">山东科技大学第三届ACM程序设计竞赛</h3>
+                    <h4 id="current_time" align="right">
+                        <script src="assets/js/data.js"></script>
+                    </h4>
+                    <h4 id="ipaddress" align="right">
+                        <script src="assets/js/getip.js"></script>
+                    </h4>
+            </div>
         </div>
 
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="local/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
